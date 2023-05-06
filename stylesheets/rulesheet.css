@@ -1,0 +1,47 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+ul[role="list"]
+ol[role="list"] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font: bold;
+    font-size: 500%;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    color: black;
+}
