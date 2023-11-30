@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font: inherit;
+    background-color: #202C36;
 }
 
 ul[role="list"]
@@ -17,18 +18,22 @@ html:focus-within {
 
 a:link {
     text-decoration: none;
+    color: #F5FFF9;
 }
 
 a:visited {
     text-decoration: none;
+    color: #F5FFF9;
 }
 
 a:hover {
     text-decoration: none;
+    color: #F5FFF9;
 }
 
 a:active {
     text-decoration: none;
+    color: #F5FFF9;
 }
 
 h1 {
