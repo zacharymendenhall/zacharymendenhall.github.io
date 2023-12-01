@@ -1,0 +1,6 @@
+11/30/23
+- Remade Layout of website
+- added new graphics to website
+- recoloring of background, Layout
+- created animation for clickable links
+- linked relevant sm sources
