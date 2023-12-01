@@ -10,31 +10,45 @@
 </head>
 
 <body>
-    <div class="bg-wrap">
+    <!-- 
+        flex 1 --- left to right: headshot, parent 1
+        parent 1 --- two flexbox, top to botton: item 1, banner name; parent two, 4 menu cards
+     -->
+
+    <div class="flexbox_outline">
+        <!-- img -->
         <img
             class="bg-img"
-            src="./img/bannerimg.png"
+            src="./img/bkg_003.jpg"
             alt="headshot of Zachary"
         >
+        <!-- flexbox 1 -->
+        <div class="flexbox_parent_rcol">
+            <!-- img -->
+            <img 
+                class="banner-img"
+                src="./img/bannername.png"
+                alt="Zachary Mendenhall"
+            >
+            
+            <div class="flexbox_menucards">
+                <!-- 4 menu cards -->
+                <a class="landingbutton" href=""><img src="/repos/zacharymendenhall.github.io/img/card01.png" class="landing_cards"></a>
+                <a class="landingbutton" href=""><img src="/repos/zacharymendenhall.github.io/img/card02.png" class="landing_cards"></a>
+                <a class="landingbutton" href=""><img src="/repos/zacharymendenhall.github.io/img/card03.png" class="landing_cards"></a>
+                <a class="landingbutton" href=""><img src="/repos/zacharymendenhall.github.io/img/card04.png" class="landing_cards"></a>
+            </div>
+            <div>
+                <p class="blankspace">-</p>
+            </div>
+            <div class="flexbox_socialmediabuttons">
+                <a href="https://www.instagram.com/zbassotone/"><img class="btns_sm_links" src="/repos/zacharymendenhall.github.io/img/smbuttons/btn_ig.png" ></a>
+                <a href=""><img class="btns_sm_links" src="/repos/zacharymendenhall.github.io/img/smbuttons/btn_fb.png" ></a>
+                <a href="https://www.youtube.com/@zacharymendenhall"><img class="btns_sm_links" src="/repos/zacharymendenhall.github.io/img/smbuttons/btn_yt.png" ></a>
+                <a href="mailto:zacharyamendenhall@gmail.com"><img class="btns_sm_links" src="/repos/zacharymendenhall.github.io/img/smbuttons/btn_em.png" ></a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div class="bg-wrap">
-        <img
-            class="bg-img"
-            src="./img/bannername.png"
-            alt="headshot of Zachary"
-        >
-    </div>
-    <div class="index_div">
-        <p><a class="landingbutton" href="">SINGER</a></p>
-        <p><a class="landingbutton"href="">COMPOSER</a></p>
-        <p><a class="landingbutton" href="">CONTACT</a></p>
-        <p><a class="landingbutton" href="">MEDIA</a></p>
-    </div>
-    <div class="index_div">
-        <p>IG</p>
-        <p>F</p>
-        <p>Email</p>
-    </div>
+    
 </body>
 </html>
