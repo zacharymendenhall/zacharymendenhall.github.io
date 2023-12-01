@@ -4,3 +4,4 @@
 - recoloring of background, Layout
 - created animation for clickable links
 - linked relevant sm sources
+- added responsive layout

@@ -17,27 +17,6 @@ img.banner-img {
     height: fit-content;
 }
 
-.bg-title h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h1, p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    text-align: center;
-}
-
-a {
-    width: max-content;
-}
-
-.title_link {
-    color: #F5FFF9 !important;
-}
-
 .flexbox_outline {
     display: flex;
     flex-direction: row;
@@ -96,4 +75,97 @@ a {
 .btns_sm_links {
     width: 2rem;
     height: auto;
+}
+
+@media screen and (max-width: 600px)
+{
+    .bg-img {
+        position: static;
+        align-items: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    img.bg-img {
+        width: 38vw;
+        height: fit-content;
+        overflow: hidden;
+        position: absolute;
+        top: 20%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    
+    img.banner-img {
+        height: 11vh;
+        width: auto;
+        position: relative;
+        top: 63%;
+        left: 0%;
+        transform: translate(0%, 340%);
+    }
+
+    .flexbox_menucards {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+        top: 63%;
+        left: 0%;
+        transform: translate(300%, 250%);
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px)
+{
+    .bg-img {
+        position: static;
+        align-items: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    img.bg-img {
+        width: 38vw;
+        height: fit-content;
+        overflow: hidden;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform:translate(-50%, 20%);
+    }
+    
+    img.banner-img {
+        height: 13vh;
+        width: auto;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 380%);
+    }
+
+    .flexbox_menucards {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(300%, 240%);
+    }
+    .flexbox_socialmediabuttons {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, -320%);
+    }
 }
