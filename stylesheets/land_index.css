@@ -9,7 +9,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: max-content;
+    height: fit-content;
 }
 
 .bg-title h1{
@@ -40,7 +40,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 16vh;
 }
 
 .landingbutton {
@@ -48,15 +48,17 @@ a {
     text-align: center;
     text-decoration: none;
     transition-duration: 0.4s;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
+    padding: 4rem 4rem;
+    font-size: 3rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     border-radius: 5px;
     margin: auto;
 }
 
+
 .landingbutton:hover {
-    background-color: #3582c4;
-    color: #F5FFF9 !important;
+    background-color: #22303a;
+    color: #F5FFF9;
+    box-shadow: 0px 6px 7px 3px rgba(0,0,0,0.24), 0px 16px 12px 10px rgba(0,0,0,0.19);
 }
