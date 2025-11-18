@@ -1,33 +1,35 @@
 /* GENERAL */
-
 * {
-    margin: auto;
-    font: inherit;
-    background-color: #202C36;
+    box-sizing: border-box;
 }
 
-ul[role="list"]
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #202C36;
+    color: #F5FFF9;
+}
+
+ul[role="list"],
 ol[role="list"] {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 html:focus-within {
     scroll-behavior: smooth;
 }
 
-a:link {
+a {
+    color: inherit;
     text-decoration: none;
-    color: #F5FFF9;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #F5FFF9;
-}
-
-a:active {
-    text-decoration: none;
-    color: #F5FFF9;
+a:focus-visible {
+    outline: 2px solid #F5FFF9;
+    outline-offset: 4px;
+    border-radius: 6px;
 }
 
 h1 {
@@ -39,8 +41,13 @@ h1 {
     font-weight: bold;
 }
 
-/* FOOTER */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
+/* FOOTER */
 footer {
     color: black;
 }

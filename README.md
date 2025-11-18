@@ -7,7 +7,7 @@ This is the official portfolio and business website of Zachary Mendenhall. The m
 - **Interactive Separable Landing Page:** The landing page adapts to the visitor's purpose for visiting the website, offering sections for accessing a coding profile, a voice portfolio, or a film scoring portfolio.
 
 ### Access
-To access the website, simply visit [www.zacharymendenhall.com](https://www.zacharymendenhall.com). Please note that the website uses cookies and may prompt users to accept terms and additional browser-based tools for a better user experience.
+To access the website, simply visit [zacharymendenhall.github.io](https://www.zacharymendenhall.com). Please note that the website uses cookies and may prompt users to accept terms and additional browser-based tools for a better user experience.
 
 ### Technologies Used
 As of September 2023, the website is primarily built using:

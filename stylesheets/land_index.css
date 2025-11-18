@@ -1,37 +1,38 @@
-img.bg-img {
-    width: 38vw;
-    height: fit-content;
-    overflow: hidden;
-}
-
-img.banner-img {
-    height: 18vh;
-    width: auto;
+.flexbox_outline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
 }
 
 .bg-img {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: fit-content;
+    width: min(420px, 100%);
+    height: auto;
+    border-radius: 8px;
 }
 
-.flexbox_outline {
+.flexbox_parent_rcol {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
     align-items: center;
+    max-width: min(520px, 100%);
+    text-align: center;
+}
+
+img.banner-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .flexbox_menucards {
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-content: stretch;
+    align-items: center;
     justify-content: center;
+    gap: 1rem;
     margin: 0;
 }
 
@@ -41,19 +42,9 @@ img.banner-img {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    margin: .5rem 0rem .5rem 0rem;
-    width: auto;
-    height: auto;
-}
-
-.flexbox_socialmediabuttons {
-    width: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    border-radius: 8px;
+    padding: 0.25rem;
+    background-color: transparent;
 }
 
 .landingbutton:hover {
@@ -62,110 +53,58 @@ img.banner-img {
     box-shadow: 0px 6px 7px 3px rgba(0,0,0,0.24), 0px 16px 12px 10px rgba(0,0,0,0.19);
 }
 
+.landingbutton:focus-visible {
+    outline: 2px solid #F5FFF9;
+    outline-offset: 4px;
+}
+
 .landing_cards {
-    width: 14vw;
+    max-width: 240px;
+    width: 60vw;
     height: auto;
+    display: block;
 }
 
 .blankspace {
     text-decoration: none;
-    color: #202c3600;
+    color: transparent;
+}
+
+.flexbox_socialmediabuttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 .btns_sm_links {
-    width: 2rem;
+    width: 2.5rem;
     height: auto;
 }
 
-@media screen and (max-width: 600px)
-{
-    .bg-img {
-        position: static;
-        align-items: center;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: fit-content;
-    }
-    img.bg-img {
-        width: 38vw;
-        height: fit-content;
-        overflow: hidden;
-        position: absolute;
-        top: 20%;
-        left:50%;
-        transform:translate(-50%, -50%);
-    }
-    
-    img.banner-img {
-        height: 11vh;
-        width: auto;
-        position: relative;
-        top: 63%;
-        left: 0%;
-        transform: translate(0%, 340%);
+@media screen and (max-width: 768px) {
+    .flexbox_outline {
+        padding: 1.25rem;
     }
 
-    .flexbox_menucards {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-content: stretch;
-        justify-content: center;
-        margin: 0;
-        position: absolute;
-        top: 63%;
-        left: 0%;
-        transform: translate(300%, 250%);
+    .landing_cards {
+        width: 70vw;
+        max-width: 260px;
     }
 
+    .btns_sm_links {
+        width: 2.25rem;
+    }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px)
-{
-    .bg-img {
-        position: static;
-        align-items: center;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: fit-content;
-    }
-    img.bg-img {
-        width: 38vw;
-        height: fit-content;
-        overflow: hidden;
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform:translate(-50%, 20%);
-    }
-    
-    img.banner-img {
-        height: 13vh;
-        width: auto;
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0%, 380%);
+@media screen and (max-width: 480px) {
+    .flexbox_parent_rcol {
+        gap: 1.25rem;
     }
 
-    .flexbox_menucards {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-content: stretch;
-        justify-content: center;
-        margin: 0;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        transform: translate(300%, 240%);
-    }
-    .flexbox_socialmediabuttons {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0%, -320%);
+    .landing_cards {
+        width: 80vw;
     }
 }
